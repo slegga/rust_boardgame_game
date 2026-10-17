@@ -47,13 +47,6 @@ use crate::game::*;
             }
         }
         fn get_game_static(&self) -> GameStatic {
-            let mut initial_state = [false; 11];
-            initial_state[0] = true;
-            initial_state[2] = true;
-            initial_state[6] = true;
-            initial_state[8] = true;
-
-
             GameStatic::new(
                 "1-2 Nim".to_string(),
                 vec!["A".to_string(), "B".to_string()],
